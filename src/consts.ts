@@ -1,3 +1,3 @@
-export const SITE_TITLE = "Astro Sky";
+export const SITE_TITLE = "Christal";
 export const SITE_DESCRIPTION =
-  "Welcome to Astro Sky. A minimal and elegant portfolio theme built for Astro.";
+  "Hi I'm Christal. Welcome to my site.";
