@@ -1,0 +1,15 @@
+---
+title: 'Advertising Poster'
+description: 'Advertising Poster.'
+pubDate: 'Jul 06 2023'
+featuredImage: '@assets/Poster.webp'
+---
+import ProjectImage from "@components/ProjectImage.astro";
+
+import image1 from "@assets/Poster.webp";
+import image2 from "@assets/Mockup-poster.webp";
+
+<ProjectImage path={image1} alt="Music Advertising Poster"/>
+<ProjectImage path={image3} alt="Music Advertising Poster"/>
+
+Advertising Poster
