@@ -32,7 +32,7 @@ Here is an example iframe embed that just needs a URL and a title:
       width: '100%', 
       padding: '10px', 
       fontSize: '16px', 
-      backgroundColor: '#fxfxfx', 
+      backgroundColor: '#f1f1f1',  // Fixed background color hex code
       border: '1px solid #ccc', 
       borderRadius: '4px', 
       color: '#333'
@@ -40,29 +40,23 @@ Here is an example iframe embed that just needs a URL and a title:
   />
 </form>
 
-
-<div style={{ marginBottom: '2cm' }}>
-  <p>Text Box 1 Content</p>
-</div>
-
-<div>
-  <p>Text Box 2 Content</p>
-</div>
+<div style={{ marginBottom: '1cm' }}></div> {/* 1cm gap */}
 
 <form>
-  <label for="name" style={{ display: 'block', marginBottom: '8px', fontSize: '16px', fontWeight: 'bold' }}>Enter your email address</label>
+  <label for="email" style={{ display: 'block', marginBottom: '8px', fontSize: '16px', fontWeight: 'bold' }}>Enter your email address</label>
   <input 
-    id="name" 
-    type="text" 
-    placeholder="Enter Your Name" 
+    id="email" 
+    type="email" 
+    placeholder="Enter Your Email" 
     style={{
       width: '100%', 
       padding: '10px', 
       fontSize: '16px', 
-      backgroundColor: '#fxfxfx', 
+      backgroundColor: '#f1f1f1',  // Fixed background color hex code
       border: '1px solid #ccc', 
       borderRadius: '4px', 
       color: '#333'
     }} 
   />
 </form>
+
