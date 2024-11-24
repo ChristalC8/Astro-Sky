@@ -5,8 +5,8 @@ import FormattedDate from "@components/FormattedDate.astro";
 
 const {
   title = "Conact",
-  description = "Blog description.",
-  posts = await getCollection("blog"),
+  description = "Conatact description.",
+  posts = await getCollection("Contact"),
 } = Astro.props;
 
 import featuredImage from "../../assets/placeholder-square.webp";
@@ -20,12 +20,12 @@ const sortedPosts = posts.sort((a, b) => {
 ---
 
 <Layout title={title} description={description} featuredImage={featuredImage}>
-  <main class="blog-list">
+  <main class="Contact-list">
     <h1 class="sr-only">Posts</h1>
     {
       sortedPosts.map((post) => (
         <article>
-          <a href={`/blog/${post.slug}/`}>
+          <a href={`/Contact/${post.slug}/`}>
             <h3 class="title">{post.data.title}</h3>
             <p class="date">
               <FormattedDate date={post.data.pubDate} />
@@ -39,18 +39,18 @@ const sortedPosts = posts.sort((a, b) => {
 </Layout>
 
 <style>
-  .blog-list {
+  .Contact-list {
     width: 90%;
     max-width: 640px;
     margin: 5em auto;
   }
 
-  .blog-list article {
+  .Contact-list article {
     margin-bottom: 3em;
     border-radius: 0.75em;
   }
 
-  .blog-list h3 {
+  .Contact-list h3 {
     margin: 0 0 0.25em 0;
     font-size: 1.5em;
     line-height: 1.4;
@@ -58,30 +58,30 @@ const sortedPosts = posts.sort((a, b) => {
     transition: border 0.3s; */
   }
 
-  .blog-list article:hover a h3 {
+  .Contact-list article:hover a h3 {
     border-bottom: 2px solid rgba(0, 0, 0, 1);
   }
 
-  .blog-list article:hover a p {
+  .Contact-list article:hover a p {
     color: #444;
     transition: color .3s;
   }
 
-  .blog-list a {
+  .Contact-list a {
     text-decoration: none;
     display: block;
     color: #444
   }
 
-  .blog-list a h3 {
+  .Contact-list a h3 {
     color: #111;
   }
 
-  .blog-list .description {
+  .Contact-list .description {
     margin: 0.75em 0 0 0;
   }
 
-  .blog-list .date {
+  .Contact-list .date {
     text-transform: uppercase;
     font-size: 0.75em;
     margin: 0.75em 0 0 0;
