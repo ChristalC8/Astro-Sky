@@ -24,6 +24,45 @@ featuredImage: '@assets/placeholder-square.webp'
     }} 
   />
 
+</form>
+
+
+
+
+
+import { useState } from 'react';
+
+export const SendButton = () => {
+  const [isSending, setIsSending] = useState(false);
+
+  const handleClick = () => {
+    setIsSending(true);
+    window.location.href = 'mailto:your-email@example.com?subject=Send%20Email&body=Message%20Content';
+  };
+
+  return (
+    <button
+      onClick={handleClick}
+      style={{
+        padding: '15px 30px',
+        fontSize: '16px',
+        background: 'linear-gradient(90deg, #4283EA, #29A5E2)',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        transition: 'background 0.3s ease',
+      }}
+    >
+      {isSending ? 'Sending...' : 'Send'}
+    </button>
+  );
+};
+
+<SendButton />
+
 
 <div style={{ marginBottom: '1cm' }}></div> {/* 1cm gap */}
 
