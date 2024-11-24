@@ -63,10 +63,9 @@ Here is an example iframe embed that just needs a URL and a title:
 <div style={{ marginBottom: '1cm' }}></div> {/* 1cm gap */}
 
 <form>
-  <label htmlFor="email" style={{ display: 'block', marginBottom: '15px', fontSize: '16px', fontWeight: 'bold' }}>Message</label>
-  <input 
-    id="email" 
-    type="email" 
+  <label htmlFor="message" style={{ display: 'block', marginBottom: '15px', fontSize: '16px', fontWeight: 'bold' }}>Message</label>
+  <textarea 
+    id="message" 
     placeholder="Message" 
     style={{
       width: '100%', 
@@ -77,7 +76,10 @@ Here is an example iframe embed that just needs a URL and a title:
       border: '1px solid #ccc', 
       borderRadius: '4px', 
       color: '#333',
-      boxSizing: 'border-box'  // Ensure padding is included in the height
+      boxSizing: 'border-box',  // Ensure padding is included in the height
+      resize: 'none',  // Disable resizing of the textarea
+      overflow: 'auto',  // Ensure overflow handling
+      lineHeight: '1.2',  // Control the line height to prevent excessive spacing
     }} 
   />
 </form>
