@@ -93,3 +93,27 @@ Otherwise I hope this helps you better understand how to develop your content us
   />
 </form>
 
+<div style={{ marginBottom: '1cm' }}></div> {/* 1cm gap */}
+
+<form>
+  <label htmlFor="message" style={{ display: 'block', marginBottom: '15px', fontSize: '16px', fontWeight: 'bold' }}>Message</label>
+  <textarea 
+    id="message" 
+    placeholder="Message" 
+    style={{
+      width: '100%', 
+      height: '3.5cm',  // Set the height to 3.5 cm
+      padding: '10px', 
+      fontSize: '16px', 
+      backgroundColor: '#f1f1f1',  // Fixed background color hex code
+      border: '1px solid #ccc', 
+      borderRadius: '4px', 
+      color: '#333',
+      boxSizing: 'border-box',  // Ensure padding is included in the height
+      resize: 'none',  // Disable resizing of the textarea
+      overflow: 'auto',  // Ensure overflow handling
+      lineHeight: '1.2',  // Control the line height to prevent excessive spacing
+    }} 
+  />
+</form>
+
