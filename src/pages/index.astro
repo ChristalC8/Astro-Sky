@@ -45,11 +45,11 @@ const sortedPosts = posts
 
     <section>
       <h2>Latest Posts:</h2>
-      <div class="blog-list">
+      <div class="contact-list">
         {
           sortedPosts.map((post) => (
             <article>
-              <a href={`/blog/${post.slug}/`}>
+              <a href={`/contact/${post.slug}/`}>
                 <h3 class="title">{post.data.title}</h3>
                 <p class="date">
                   <FormattedDate date={post.data.pubDate} />
@@ -60,7 +60,7 @@ const sortedPosts = posts
           ))
         }
       </div>
-      <p><a href="./blog" class="section-link">View All Posts</a></p>
+      <p><a href="./contact" class="section-link">View All Posts</a></p>
     </section>
   </main>
 </Layout>
