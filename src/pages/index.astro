@@ -42,25 +42,5 @@ const sortedPosts = posts
       <ImageGrid posts={sortedProjects} />
       <p><a href="./projects" class="section-link">View All Projects</a></p>
     </section>
-
-    <section>
-      <h2>Latest Posts:</h2>
-      <div class="contact-list">
-        {
-          sortedPosts.map((post) => (
-            <article>
-              <a href={`/contact/${post.slug}/`}>
-                <h3 class="title">{post.data.title}</h3>
-                <p class="date">
-                  <FormattedDate date={post.data.pubDate} />
-                </p>
-                <p class="description">{post.data.description}</p>
-              </a>
-            </article>
-          ))
-        }
-      </div>
-      <p><a href="./contact" class="section-link">View All Posts</a></p>
-    </section>
   </main>
 </Layout>
