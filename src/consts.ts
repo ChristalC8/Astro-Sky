@@ -1,4 +1,4 @@
 export const SITE_TITLE = "Christal";
 export const SITE_DESCRIPTION =
-"Hi I'm Christal. I'm a Graphic Designer based in the Northern Rivers." 
+"Transforming ideas into impactful designs - Christal Caton, your go-to graphic designer in the Northern Rivers, NSW, for branding, print and digital media." 
 
