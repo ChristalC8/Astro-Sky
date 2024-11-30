@@ -6,6 +6,7 @@ export const SITE_DESCRIPTION =
 export const SITE_DESCRIPTION =
 "Christal Caton, your go to graphic designer in the Northern Rivers, NSW, for branding, print, and digital media." 
 
+---
 
 
 
